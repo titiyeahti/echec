@@ -16,6 +16,7 @@ typedef struct plateau {
 		char rocn_dispo, rocb_dispo;
 } plateau;
 
+/* les blancs sont en bas */
 plateau init();
 
 void print_plateau(plateau p);
