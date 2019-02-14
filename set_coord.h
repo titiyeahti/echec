@@ -25,3 +25,5 @@ liste liste_vide();
 liste add(coord pos, liste l);
 
 void free(liste l);
+
+void print_liste(liste l);

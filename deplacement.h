@@ -19,4 +19,4 @@ char coup_suicide(coord depart, coord cible, plateau p);
  */
 char echec(coord depart, coord cible, plateau p);
 
-
+void print_liste_coups(liste lc, coord c, plateau p);

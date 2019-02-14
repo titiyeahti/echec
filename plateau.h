@@ -18,4 +18,6 @@ typedef struct plateau {
 
 plateau init();
 
+void print_plateau(plateau p);
+
 #endif
