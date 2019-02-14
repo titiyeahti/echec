@@ -16,3 +16,5 @@ typedef struct piece {
 		typepiece t;
 		char c;
 }
+
+piece nouvelle_piece(typepiece t, char c);
