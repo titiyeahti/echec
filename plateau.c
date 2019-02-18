@@ -4,9 +4,7 @@ plateau init(){
 		plateau pl;
 		pl.rn = nouvelle_coord(0, 4);
 		pl.rb = nouvelle_coord(7, 4);
-		pl.echec = 0;
-		pl.rocn_dispo = 1;
-		pl.rocb_dispo = 1;
+		pl.booleens = 6;
 		int i, j;
 		for (i=0; i<8; i++)
 		{

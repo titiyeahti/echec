@@ -8,7 +8,12 @@
 #define FOU 5
 #define DAME 6
 #define ROI 7
+#define nouvelle_piece(t, c) 
 
 /* c contient l'info de la couleur (0 ou 1, 0 pour les noirs évidement) */
 
 char nouvelle_piece(char t, char c);
+
+char carac(char t);
+
+void print_piece(char p);

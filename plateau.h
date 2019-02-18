@@ -1,19 +1,21 @@
-#ifndef
 #include"piece.h"
 #include"set_coord.h"
-#include<stdio.h>
-#include<stdlib.h>
+#define echec(boole) boole&1
+#define rocn(boole) boole&2
+#define rocb(boole) boole&4
 
 /* struture qui contient les
  * pieces au cours de la partie
  * rn et rb indiquent les coordonnées des rois
- * echec indique si le joueur courant est en echec
+ * booleens contient 3 bouleens sur ses bits de poids faible
+ * 	- le 1 contient l'info de si c'est en échec;
+ * 	- le 2 dit si le roc noir est possible
+ * 	- le 4 dit sir le roc blanc est possible
  */
 typedef struct plateau {
-		piece [8][8] jeu;
+		char [8][8] jeu;
 		coord rn, rb;
-		char echec;
-		char rocn_dispo, rocb_dispo;
+		char booleens;
 } plateau;
 
 /* les blancs sont en bas */
@@ -21,4 +23,3 @@ plateau init();
 
 void print_plateau(plateau p);
 
-#endif

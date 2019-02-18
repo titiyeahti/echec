@@ -11,7 +11,7 @@ struct maillon {
 
 typedef maillon * liste;
 
-coord nouvelle(char x, char y);
+coord nouvelle_coord(char x, char y);
 
 coord add_coord(coord c1, coord c2);
 
